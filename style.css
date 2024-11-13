@@ -578,6 +578,11 @@ body {
   border-radius: 100px;
 }
 
+.wpp-button:hover {
+  background-color: #3da337;
+  box-shadow: 0 0 15px #0d783a;
+}
+
 .contact-right h3 {
   font-size: 2rem;
   margin-bottom: 40px;
@@ -597,6 +602,13 @@ body {
   height: 30vh;
   background-color: #f0f2f3;
   font-family: Montserrat;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.foot-logo img {
+  width: 300px;
 }
 /* 
 
