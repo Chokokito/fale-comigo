@@ -534,82 +534,83 @@ body {
     width: 200px;
     height: 200px;
   }
-}
-/* 
+  /* 
 < Contact >
  */
 
-#contact {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(assets/contact-bg.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 200px;
-  display: flex;
-  font-family: montserrat;
-  justify-content: space-around;
-  align-items: baseline;
-}
+  #contact {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/contact-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+    display: flex;
+    font-family: montserrat;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 
-.contact-left {
-  width: 50%;
-}
+  .contact-left {
+    width: 50%;
+  }
 
-.contact-left h2 {
-  font-size: 5rem;
-  margin-bottom: 20px;
-}
-.contact-left p {
-  font-size: 1.34rem;
-  width: 80%;
-}
+  .contact-left h2 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+  .contact-left p {
+    font-size: 1.34rem;
+    width: 80%;
+  }
 
-.wpp-button {
-  cursor: pointer;
-  margin-top: 50px;
-  border: none;
-  background-color: #44af3f;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 700;
-  width: 250px;
-  height: 70px;
-  border-radius: 100px;
-}
+  .wpp-button {
+    cursor: pointer;
+    margin-top: 50px;
+    border: none;
+    background-color: #44af3f;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 250px;
+    height: 70px;
+    border-radius: 100px;
+  }
 
-.wpp-button:hover {
-  background-color: #3da337;
-  box-shadow: 0 0 15px #0d783a;
-}
+  .wpp-button:hover {
+    background-color: #3da337;
+    box-shadow: 0 0 15px #0d783a;
+  }
 
-.contact-right h3 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-}
+  .contact-right h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
 
-.contact-right p {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-/* 
+  .contact-right p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  /* 
 < Footer >
 */
 
-#foot {
-  display: flex;
-  width: 100vw;
-  height: 30vh;
-  background-color: #f0f2f3;
-  font-family: Montserrat;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1.3rem;
+  #foot {
+    display: flex;
+    width: 100vw;
+    height: 30vh;
+    background-color: #f0f2f3;
+    font-family: Montserrat;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+
+  .foot-logo img {
+    width: 300px;
+  }
 }
 
-.foot-logo img {
-  width: 300px;
-}
 /* 
 
 < Small Devices >
@@ -628,9 +629,12 @@ body {
 
   .nav-bar {
     position: fixed;
-    padding: 5px;
+    padding: 20px;
     width: 100vw;
-    background-color: black;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(143, 143, 143, 0.01);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -645,14 +649,11 @@ body {
   }
 
   .menu-icon img {
-    width: 30px;
+    width: 40px;
   }
 
   .small-logo {
     width: 40px;
-  }
-
-  .menu-icon:active {
   }
 
   .menu {
@@ -667,12 +668,12 @@ body {
  */
   #hero {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
 
     background-repeat: no-repeat;
-    background-image: url(assets/image2.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(assets/bg-small.png);
+    background-size: 100%;
+    background-position-y: bottom;
 
     display: flex;
     flex-direction: column;
@@ -685,7 +686,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    padding: 40px;
+    padding: 70px;
   }
   #hero h3 {
     color: #fff;
@@ -707,11 +708,170 @@ body {
     font-family: Montserrat;
     font-weight: 500;
     color: white;
-    background-color: #ff7a22;
+    background-color: #ff6b04;
 
     border-radius: 30px;
     margin-top: 40px;
     padding: 14px;
     border: 1px solid rgb(240, 96, 29);
+  }
+  /* 
+  < About-Us >
+   */
+  #about-us {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/bg-about-sm.png);
+    background-size: cover;
+    background-position-y: bottom;
+
+    font-family: Montserrat;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 15%;
+  }
+
+  #about-us h2 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  /* 
+   < Goals >
+
+ */
+  #objective {
+    width: 100vw;
+    height: 130vh;
+    background-color: #000;
+    color: white;
+
+    font-family: Montserrat;
+    padding: 13%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .objective-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 60px;
+  }
+
+  .objective-section h1 {
+    font-size: 1.2rem;
+  }
+
+  .objective-section p {
+    font-size: 0.9rem;
+  }
+
+  .objective-image {
+    display: flex;
+    flex-shrink: 0;
+    overflow: hidden;
+    width: auto;
+    height: 40%;
+  }
+
+  .objective-image img {
+    width: 50px;
+    height: auto;
+  }
+
+  .objective-section-2 {
+    flex-direction: row-reverse;
+  }
+  .objective-section-4 {
+    flex-direction: row-reverse;
+  }
+
+  .objective-description {
+    height: 60%;
+  }
+
+  .header-objective {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ff9900;
+    text-align: start;
+  }
+  /* 
+  < Services >
+ */
+  #services {
+    width: 100vw;
+    height: 160vh;
+    background-color: #ff9900;
+    padding: 20px;
+  }
+
+  .services-left {
+    font-family: Montserrat;
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid black;
+    padding: 10%;
+  }
+
+  .services-title {
+    font-size: 2.3rem;
+    font-weight: 800;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-icon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    padding: 60px;
+  }
+  /* 
+ < Costumers > 
+ */
+
+  #clients {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+    padding: 50px;
+    font-family: Montserrat;
+  }
+  .client-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clients-head {
+    color: #ff9900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clients-head img {
+    width: 50px;
+  }
+
+  .clients-head h2 {
+    font-size: 2rem;
+    font-weight: 900;
   }
 }
