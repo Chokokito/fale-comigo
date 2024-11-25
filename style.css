@@ -87,20 +87,23 @@ body {
   background-color: #ff7a22;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 1068px) {
   /* 
 
 < Navigation Bar >
 
  */
-  * {
-    scroll-behavior: smooth;
-  }
 
   header {
     top: 0;
   }
-
+  .sidenav {
+    display: none;
+  }
   .nav-bar {
     position: fixed;
     -webkit-backdrop-filter: blur(10px);
@@ -422,6 +425,10 @@ body {
     overflow: hidden;
   }
 
+  .service-icon {
+    display: none;
+  }
+
   .services-left {
     height: 100vh;
     width: 60%;
@@ -440,6 +447,7 @@ body {
 
     display: flex;
     flex-direction: column;
+    flex-grow: 0;
     justify-content: center;
     margin-left: calc(1vh + 100px);
     margin-bottom: calc(1vh + 20px);
@@ -625,19 +633,73 @@ body {
 
   header {
     top: 0px;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
   }
 
   .nav-bar {
     position: fixed;
     padding: 20px;
     width: 100vw;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+
     background-color: rgb(0, 0, 0);
     background-color: rgba(143, 143, 143, 0.01);
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .sidenav {
+    background-color: rgba(61, 61, 61, 0.9);
+
+    transition: 1s;
+
+    position: fixed;
+    right: -500px;
+    top: 80px;
+    width: 200px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+
+    padding: 10px;
+  }
+
+  .sidenav div {
+    width: 95%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .sidenav div a {
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .sidenav div a :press {
+    text-shadow: 0 0 5px #a4a4a4a8, 0 0 1000px #fff, 0 0 20px #fff,
+      0 0 20px #228dff, 0 0 45px #228dff, 0 0 50px #228dff;
+  }
+
+  .sidenav div a :active {
+    text-shadow: 0 0 5px #a4a4a4a8, 0 0 1000px #fff, 0 0 20px #fff,
+      0 0 20px #228dff, 0 0 45px #228dff, 0 0 50px #228dff;
+  }
+  .side-nav div :hover {
+    background-color: white;
+  }
+
+  .side-nav div :active {
+    background-color: rgba(61, 61, 61, 0.95);
   }
 
   .logo img:first-child {
@@ -671,7 +733,7 @@ body {
     height: 110vh;
 
     background-repeat: no-repeat;
-    background-image: url(assets/bg-small.png);
+    background-image: url(assets/bg-small.webp);
     background-size: 100%;
     background-position-y: bottom;
 
@@ -719,8 +781,8 @@ body {
   < About-Us >
    */
   #about-us {
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
     background-image: url(assets/bg-about-sm.png);
     background-size: cover;
     background-position-y: bottom;
@@ -732,6 +794,7 @@ body {
     gap: 20px;
 
     padding: 15%;
+    padding-bottom: 30%;
   }
 
   #about-us h2 {
@@ -743,8 +806,8 @@ body {
 
  */
   #objective {
-    width: 100vw;
-    height: 130vh;
+    width: auto;
+    height: auto;
     background-color: #000;
     color: white;
 
@@ -765,6 +828,8 @@ body {
 
   .objective-section h1 {
     font-size: 1.2rem;
+    width: auto;
+    height: auto;
   }
 
   .objective-section p {
@@ -805,8 +870,8 @@ body {
   < Services >
  */
   #services {
-    width: 100vw;
-    height: 160vh;
+    width: auto;
+    height: auto;
     background-color: #ff9900;
     padding: 20px;
   }
@@ -818,6 +883,8 @@ body {
 
     border: 1px solid black;
     padding: 10%;
+    overflow: auto;
+    overflow-x: hidden;
   }
 
   .services-title {
@@ -844,8 +911,8 @@ body {
  */
 
   #clients {
-    width: 100vw;
-    height: 150vh;
+    width: auto;
+    height: auto;
     background-color: #000;
     color: white;
     padding: 50px;
@@ -952,6 +1019,13 @@ body {
   }
 
   #foot {
+    height: 70vh;
     padding: 10%;
+    gap: 40px;
+    padding-bottom: 100px;
+  }
+
+  .show {
+    right: 0px;
   }
 }
