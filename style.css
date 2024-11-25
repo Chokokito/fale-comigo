@@ -845,7 +845,7 @@ body {
 
   #clients {
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     background-color: #000;
     color: white;
     padding: 50px;
@@ -873,5 +873,85 @@ body {
   .clients-head h2 {
     font-size: 2rem;
     font-weight: 900;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .clients-head p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .clients-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin: 20px;
+  }
+
+  .clients-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  /* 
+
+  < Clients / Contact >
+
+   */
+
+  #foot,
+  #contact {
+    background-color: #ff9900;
+    font-family: Montserrat;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-left {
+    padding: 10%;
+    padding-top: 30%;
+  }
+
+  .contact-left h2 {
+    font-size: 2.3rem;
+    font-weight: 900;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  .contact-left p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+
+  .wpp-button {
+    background-color: #44af3f;
+    border: none;
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  .wpp-button:hover {
+    background-color: #0d783a;
+  }
+
+  .contact-right {
+    padding: 10%;
+  }
+
+  .contact-right h3 {
+    font-weight: 900;
+  }
+
+  #foot {
+    padding: 10%;
   }
 }
