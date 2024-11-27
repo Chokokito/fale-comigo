@@ -548,15 +548,18 @@ body {
 
   #contact {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-image: url(assets/contact-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 200px;
     display: flex;
+    text-wrap: nowrap;
     font-family: montserrat;
     justify-content: space-around;
     align-items: baseline;
+
+    overflow: hidden;
   }
 
   .contact-left {
@@ -564,7 +567,7 @@ body {
   }
 
   .contact-left h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 20px;
   }
   .contact-left p {
@@ -612,6 +615,8 @@ body {
     justify-content: space-around;
     align-items: center;
     font-size: 1.3rem;
+
+    overflow: hidden;
   }
 
   .foot-logo img {
